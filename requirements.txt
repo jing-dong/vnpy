@@ -16,7 +16,7 @@ seaborn
 futu-api
 tigeropen
 rqdatac
-ta-lib
+# ta-lib
 ibapi
 deap
 pyzmq

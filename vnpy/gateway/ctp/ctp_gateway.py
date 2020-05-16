@@ -305,6 +305,7 @@ class CtpMdApi(MdApi):
             datetime=datetime.strptime(timestamp, "%Y%m%d %H:%M:%S.%f"),
             name=symbol_name_map[symbol],
             volume=data["Volume"],
+            turn_over=data["Turnover"],
             open_interest=data["OpenInterest"],
             last_price=data["LastPrice"],
             limit_up=data["UpperLimitPrice"],

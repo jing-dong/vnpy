@@ -247,6 +247,7 @@ class ContractData(BaseData):
     option_expiry: datetime = None
     option_portfolio: str = ""
     option_index: str = ""          # for identifying options with same strike price
+    raw_data: dict = None  # raw data from the exchange. Only set in CtpGateway
 
     def __post_init__(self):
         """"""

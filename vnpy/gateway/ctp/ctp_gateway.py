@@ -318,7 +318,8 @@ class CtpMdApi(MdApi):
             ask_price_1=adjust_price(data["AskPrice1"]),
             bid_volume_1=data["BidVolume1"],
             ask_volume_1=data["AskVolume1"],
-            gateway_name=self.gateway_name
+            gateway_name=self.gateway_name,
+            raw_data=data
         )
 
         if data["BidVolume2"] or data["AskVolume2"]:

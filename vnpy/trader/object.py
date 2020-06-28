@@ -72,6 +72,8 @@ class TickData(BaseData):
     ask_volume_4: float = 0
     ask_volume_5: float = 0
 
+    raw_data: dict = None  # raw data from the exchange. Only set in CtpGateway
+
     def __post_init__(self):
         """"""
         self.vt_symbol = f"{self.symbol}.{self.exchange.value}"

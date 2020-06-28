@@ -599,7 +599,8 @@ class CtpTdApi(TdApi):
                 size=data["VolumeMultiple"],
                 pricetick=data["PriceTick"],
                 gateway_name=self.gateway_name,
-                raw_data=data
+                raw_data=data,
+                is_last=last
             )
 
             # For option only

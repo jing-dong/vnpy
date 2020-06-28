@@ -248,6 +248,7 @@ class ContractData(BaseData):
     option_portfolio: str = ""
     option_index: str = ""          # for identifying options with same strike price
     raw_data: dict = None  # raw data from the exchange. Only set in CtpGateway
+    is_last: bool = False  # is this the last contract data from the exchange.
 
     def __post_init__(self):
         """"""
